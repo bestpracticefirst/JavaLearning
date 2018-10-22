@@ -12,6 +12,7 @@ public class Reflect {
         Method[] methods=Demo.class.getDeclaredMethods();
         for(Method method:methods){
             System.out.printf("method name: %s\n",method.getName());
+            method.invoke()
         }
     }
     public static void testContructor() throws Exception{
