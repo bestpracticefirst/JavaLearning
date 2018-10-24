@@ -12,10 +12,9 @@ public class Reflect {
         Method[] methods=Demo.class.getDeclaredMethods();
         for(Method method:methods){
             System.out.printf("method name: %s\n",method.getName());
-            method.invoke()
         }
     }
-    public static void testContructor() throws Exception{
+    public static void testConstructor() throws Exception{
         Constructor cs=Demo.class.getConstructor(String.class,int.class,String.class);
         Demo demo=(Demo)cs.newInstance("zhangsan",10,"男");
         demo.sayHello();
